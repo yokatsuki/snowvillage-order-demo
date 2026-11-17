@@ -1,0 +1,292 @@
+{
+  "order_company_a.pdf": {
+    "file": "order_company_a.pdf",
+    "customer_id": "C001",
+    "header": {
+      "order_number": "SKR-PO-2026-1105",
+      "order_date": "2026-11-05",
+      "buyer_name": "株式会社さくら文具商事",
+      "supplier_name": "スノービレッジ文具販売株式会社",
+      "delivery_date": "2026-11-12",
+      "delivery_address": "東京都千代田区架空町1-2-3 さくらビル5F 総務部",
+      "subtotal": 36950,
+      "tax_amount": 3695,
+      "total_amount": 40645,
+      "notes": "午前中着でお願いします。"
+    },
+    "lines": [
+      {
+        "line_number": 1,
+        "product_code": "SV-CP-A4",
+        "product_name": "コピー用紙 A4 500枚",
+        "specification": "白色度93%",
+        "quantity": 20,
+        "unit": "冊",
+        "unit_price": 480,
+        "line_amount": 9600
+      },
+      {
+        "line_number": 2,
+        "product_code": "SV-TN-K01",
+        "product_name": "トナーカートリッジ 黒 TK-01",
+        "specification": "純正品",
+        "quantity": 2,
+        "unit": "本",
+        "unit_price": 8800,
+        "line_amount": 17600
+      },
+      {
+        "line_number": 3,
+        "product_code": "SV-CF-A4",
+        "product_name": "クリアファイル A4 10枚入",
+        "specification": "透明",
+        "quantity": 15,
+        "unit": "パック",
+        "unit_price": 350,
+        "line_amount": 5250
+      },
+      {
+        "line_number": 4,
+        "product_code": "SV-BP-BK",
+        "product_name": "ボールペン 黒 10本入",
+        "specification": "0.5mm",
+        "quantity": 5,
+        "unit": "箱",
+        "unit_price": 900,
+        "line_amount": 4500
+      }
+    ],
+    "scenario": "正常系。全検証PASSで確定可能",
+    "expected_validation": "READY",
+    "expected_product_codes": [
+      "SV-CP-A4",
+      "SV-TN-K01",
+      "SV-CF-A4",
+      "SV-BP-BK"
+    ]
+  },
+  "order_company_b.pdf": {
+    "file": "order_company_b.pdf",
+    "customer_id": "C002",
+    "header": {
+      "order_number": "AOB-77812",
+      "order_date": "2026-11-06",
+      "buyer_name": "青葉ロジテック(株)",
+      "supplier_name": "スノービレッジ文具販売株式会社",
+      "delivery_date": "2026-11-20",
+      "delivery_address": "神奈川県横浜市架空区みどり台4-5-6 青葉ロジテック 第2倉庫",
+      "subtotal": 40800,
+      "tax_amount": 4080,
+      "total_amount": 44880,
+      "notes": "納品時は第2倉庫受付へ。"
+    },
+    "lines": [
+      {
+        "line_number": 1,
+        "product_code": "AL-1001",
+        "product_name": "PPC用紙 A4 (5冊/箱)",
+        "specification": "64g/m2",
+        "quantity": 4,
+        "unit": "箱",
+        "unit_price": 2400,
+        "line_amount": 9600
+      },
+      {
+        "line_number": 2,
+        "product_code": "AL-2050",
+        "product_name": "レーザートナー BK",
+        "specification": "TK-01対応",
+        "quantity": 3,
+        "unit": "個",
+        "unit_price": 8500,
+        "line_amount": 25500
+      },
+      {
+        "line_number": 3,
+        "product_code": "AL-3300",
+        "product_name": "ステープル針 #10",
+        "specification": "1000本",
+        "quantity": 10,
+        "unit": "箱",
+        "unit_price": 120,
+        "line_amount": 1200
+      },
+      {
+        "line_number": 4,
+        "product_code": "AL-3410",
+        "product_name": "フラットファイル 青",
+        "specification": "A4 10冊",
+        "quantity": 2,
+        "unit": "P",
+        "unit_price": 1200,
+        "line_amount": 2400
+      },
+      {
+        "line_number": 5,
+        "product_code": "AL-3120",
+        "product_name": "クリアホルダー A4",
+        "specification": "10枚入",
+        "quantity": 6,
+        "unit": "P",
+        "unit_price": 350,
+        "line_amount": 2100
+      }
+    ],
+    "scenario": "別レイアウト・独自品番・和暦・2ページ明細。標準化して確定可能",
+    "expected_validation": "READY",
+    "expected_product_codes": [
+      "SV-CP-A4",
+      "SV-TN-K01",
+      "SV-ST-10",
+      "SV-FF-A4",
+      "SV-CF-A4"
+    ],
+    "expected_standard_quantity": [
+      20,
+      3,
+      10,
+      2,
+      6
+    ]
+  },
+  "order_company_c.pdf": {
+    "file": "order_company_c.pdf",
+    "customer_id": "C003",
+    "header": {
+      "order_number": "MNT-2611-031",
+      "order_date": "2026-11-07",
+      "buyer_name": "みなと工務店株式会社",
+      "supplier_name": "スノービレッジ文具販売株式会社",
+      "delivery_date": "2026-11-21",
+      "delivery_address": "大阪府大阪市架空区港南7-8-9 みなと工務店 資材置場",
+      "subtotal": 26500,
+      "tax_amount": 2650,
+      "total_amount": 29150,
+      "notes": "現場直送。"
+    },
+    "lines": [
+      {
+        "line_number": 1,
+        "product_code": "MK-0101",
+        "product_name": "事務用紙 A4",
+        "specification": "500枚",
+        "quantity": 10,
+        "unit": "冊",
+        "unit_price": 480,
+        "line_amount": 4800
+      },
+      {
+        "line_number": 2,
+        "product_code": "MK-0205",
+        "product_name": "トナー 黒",
+        "specification": "TK-01",
+        "quantity": 2,
+        "unit": "本",
+        "unit_price": 8800,
+        "line_amount": 18600
+      },
+      {
+        "line_number": 3,
+        "product_code": "MK-0420",
+        "product_name": "クリアホルダー A4 青",
+        "specification": "10枚",
+        "quantity": 4,
+        "unit": "パック",
+        "unit_price": 350,
+        "line_amount": 1400
+      },
+      {
+        "line_number": 4,
+        "product_code": "MK-0310",
+        "product_name": "ボールペン 黒",
+        "specification": "10本",
+        "quantity": 3,
+        "unit": "箱",
+        "unit_price": 900,
+        "line_amount": 2700
+      }
+    ],
+    "scenario": "スキャン画像PDF。未登録商品MK-0420と明細2の金額不整合でERROR",
+    "expected_validation": "NEEDS_REVIEW",
+    "expected_errors": [
+      "PRODUCT_MAPPING",
+      "LINE_AMOUNT",
+      "SUBTOTAL",
+      "TAX"
+    ],
+    "fix_steps": [
+      {
+        "line_no": 3,
+        "field": "PRODUCT_CODE",
+        "value": "SV-CF-A4"
+      },
+      {
+        "line_no": 2,
+        "field": "LINE_AMOUNT",
+        "value": 17600
+      }
+    ]
+  },
+  "order_company_a_revised.pdf": {
+    "file": "order_company_a_revised.pdf",
+    "customer_id": "C001",
+    "header": {
+      "order_number": "SKR-PO-2026-1105",
+      "order_date": "2026-11-05",
+      "buyer_name": "株式会社さくら文具商事",
+      "supplier_name": "スノービレッジ文具販売株式会社",
+      "delivery_date": "2026-11-12",
+      "delivery_address": "東京都千代田区架空町1-2-3 さくらビル5F 総務部",
+      "subtotal": 41750,
+      "tax_amount": 4175,
+      "total_amount": 45925,
+      "notes": "数量変更版。午前中着でお願いします。"
+    },
+    "lines": [
+      {
+        "line_number": 1,
+        "product_code": "SV-CP-A4",
+        "product_name": "コピー用紙 A4 500枚",
+        "specification": "白色度93%",
+        "quantity": 30,
+        "unit": "冊",
+        "unit_price": 480,
+        "line_amount": 14400
+      },
+      {
+        "line_number": 2,
+        "product_code": "SV-TN-K01",
+        "product_name": "トナーカートリッジ 黒 TK-01",
+        "specification": "純正品",
+        "quantity": 2,
+        "unit": "本",
+        "unit_price": 8800,
+        "line_amount": 17600
+      },
+      {
+        "line_number": 3,
+        "product_code": "SV-CF-A4",
+        "product_name": "クリアファイル A4 10枚入",
+        "specification": "透明",
+        "quantity": 15,
+        "unit": "パック",
+        "unit_price": 350,
+        "line_amount": 5250
+      },
+      {
+        "line_number": 4,
+        "product_code": "SV-BP-BK",
+        "product_name": "ボールペン 黒 10本入",
+        "specification": "0.5mm",
+        "quantity": 5,
+        "unit": "箱",
+        "unit_price": 900,
+        "line_amount": 4500
+      }
+    ],
+    "scenario": "Aと同一発注番号・内容違い。確定済みAを上書きしない",
+    "expected_errors": [
+      "DUPLICATE_ORDER_NUMBER"
+    ]
+  }
+}

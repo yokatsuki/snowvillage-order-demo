@@ -1,0 +1,8 @@
+name: snowvillage_env
+channels:
+  - snowflake
+dependencies:
+  - streamlit=1.52.2
+  - pandas
+  - pypdfium2
+  - snowflake-snowpark-python

@@ -1,0 +1,31 @@
+definition_version: 2
+entities:
+  snowvillage_order_intake_app:
+    type: streamlit
+    identifier:
+      name: SNOWVILLAGE_ORDER_INTAKE_APP
+      database: SNOWVILLAGE_DB
+      schema: SNOWVILLAGE_APP
+    title: "SnowVillage 受注取込デモ"
+    comment: "異なる書式のPDF発注書を Cortex AI_EXTRACT で受注データ化するデモ（架空データ）"
+    query_warehouse: SNOWVILLAGE_WH
+    # ウェアハウスランタイムを明示（Compute Pool 不要・追加費用なし）
+    # ※ ウェアハウスランタイムはアプリのルートの streamlit_app.py を起動するため、app/ をデプロイのルートにする
+    runtime_name: SYSTEM$WAREHOUSE_RUNTIME
+    stage: SNOWVILLAGE_APP.SNOWVILLAGE_APP_STAGE
+    main_file: streamlit_app.py
+    artifacts:
+      - streamlit_app.py
+      - environment.yml
+      - ui_common.py
+      - db.py
+      - upload.py
+      - extraction.py
+      - normalization.py
+      - validation.py
+      - order_service.py
+      - history.py
+      - app_pages/upload_page.py
+      - app_pages/review_page.py
+      - app_pages/orders_page.py
+      - app_pages/audit_page.py

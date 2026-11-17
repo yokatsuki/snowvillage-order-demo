@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+output/
+.streamlit/secrets.toml
+scripts/.font_droid_sans_fallback.ttf
+
+# Local credentials and workspace metadata
+.env
+.env.*
+!.env.example
+.snowflake/
+.DS_Store
+.folder
